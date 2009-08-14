@@ -12,5 +12,5 @@ if len(options.mac) < 17 or not re.compile('([a-fA-F0-9]{2}[:\-]?){6}').match(op
 
 mac = options.mac.replace(':','\\x').replace('-','\\x')
 
-#s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-#s.sendto('\xff'*6+options.mac*16, (options.ip, 80))
+s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.sendto('\xff'*6+options.mac*16, (options.ip, 80))
