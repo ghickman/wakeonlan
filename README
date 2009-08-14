@@ -1,0 +1,15 @@
+WakeOnLan
+=========
+
+A simple script to send 'magic packets' to another computer to turn it on remotely.
+
+Usage:
+
+Run on the command line like so:
+
+python wakeonlan.py -i <ip-address> -m <remote-mac-address>
+
+where <ip-address> is the IP address you wish to send the packets to and
+<remote-mac-address> is the MAC address of the remote computer.
+
+The script runs on port 80 by default.
